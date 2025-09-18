@@ -1,0 +1,120 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-09-18",
+  "brands": [
+    {
+      "name": "PayPal",
+      "domains": [
+        "paypal.com",
+        "paypal.me"
+      ],
+      "logo_hash": "abc123",
+      "similarity_threshold": 0.85,
+      "common_spoofs": [
+        "payp4l",
+        "paypaI",
+        "paypal-secure"
+      ]
+    },
+    {
+      "name": "Amazon",
+      "domains": [
+        "amazon.com",
+        "amazon.co.uk",
+        "amazon.de"
+      ],
+      "logo_hash": "def456",
+      "similarity_threshold": 0.85,
+      "common_spoofs": [
+        "amaz0n",
+        "amazom",
+        "amazon-prime"
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "domains": [
+        "microsoft.com",
+        "outlook.com",
+        "live.com"
+      ],
+      "logo_hash": "ghi789",
+      "similarity_threshold": 0.85,
+      "common_spoofs": [
+        "microsft",
+        "micro5oft",
+        "microsoft-office"
+      ]
+    },
+    {
+      "name": "Google",
+      "domains": [
+        "google.com",
+        "gmail.com",
+        "google.co.uk"
+      ],
+      "logo_hash": "jkl012",
+      "similarity_threshold": 0.85,
+      "common_spoofs": [
+        "g00gle",
+        "googIe",
+        "google-mail"
+      ]
+    },
+    {
+      "name": "Apple",
+      "domains": [
+        "apple.com",
+        "icloud.com"
+      ],
+      "logo_hash": "mno345",
+      "similarity_threshold": 0.85,
+      "common_spoofs": [
+        "appIe",
+        "apple-id",
+        "apple-store"
+      ]
+    },
+    {
+      "name": "Facebook",
+      "domains": [
+        "facebook.com",
+        "meta.com"
+      ],
+      "logo_hash": "pqr678",
+      "similarity_threshold": 0.85,
+      "common_spoofs": [
+        "faceb00k",
+        "facebook-security",
+        "meta-support"
+      ]
+    },
+    {
+      "name": "Twitter",
+      "domains": [
+        "twitter.com",
+        "x.com"
+      ],
+      "logo_hash": "stu901",
+      "similarity_threshold": 0.85,
+      "common_spoofs": [
+        "twiter",
+        "twitter-support",
+        "x-corp"
+      ]
+    },
+    {
+      "name": "LinkedIn",
+      "domains": [
+        "linkedin.com"
+      ],
+      "logo_hash": "vwx234",
+      "similarity_threshold": 0.85,
+      "common_spoofs": [
+        "linkedln",
+        "linkedin-premium",
+        "linked-in"
+      ]
+    }
+  ]
+}

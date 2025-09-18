@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelAI Dashboard</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>🛡️ SentinelAI</h1>
+                <p class="tagline">AI-Powered Security Guard</p>
+            </div>
+        </header>
+
+        <main>
+            <!-- Current Page Risk Status -->
+            <section class="risk-status">
+                <div class="risk-indicator" id="riskIndicator">
+                    <div class="risk-score" id="riskScore">--</div>
+                    <div class="risk-label" id="riskLabel">Scanning...</div>
+                </div>
+                <button id="scanButton" class="scan-btn">🔍 Scan Current Page</button>
+            </section>
+
+            <!-- Threat Details -->
+            <section class="threat-details" id="threatDetails" style="display: none;">
+                <h3>🚨 Detected Threats</h3>
+                <div id="threatList" class="threat-list"></div>
+            </section>
+
+            <!-- Statistics -->
+            <section class="stats">
+                <h3>📊 Protection Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" id="threatsBlocked">0</span>
+                        <span class="stat-label">Threats Blocked</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="pagesScanned">0</span>
+                        <span class="stat-label">Pages Scanned</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="riskReduction">0%</span>
+                        <span class="stat-label">Risk Reduction</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="activity">
+                <h3>📋 Recent Activity</h3>
+                <div id="activityList" class="activity-list">
+                    <p class="no-activity">No recent activity</p>
+                </div>
+            </section>
+
+            <!-- Settings -->
+            <section class="settings">
+                <h3>⚙️ Settings</h3>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="realTimeProtection" checked>
+                        Real-time Protection
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="notificationsEnabled" checked>
+                        Security Notifications
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        Sensitivity Level:
+                        <select id="sensitivityLevel">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </label>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-actions">
+                <button id="reportFalsePositive" class="secondary-btn">Report False Positive</button>
+                <button id="learnMore" class="secondary-btn">Learn More</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

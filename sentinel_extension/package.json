@@ -1,0 +1,22 @@
+{
+  "name": "sentinelai-extension",
+  "version": "1.0.0",
+  "description": "AI-powered browser extension for social engineering detection",
+  "scripts": {
+    "build": "echo 'Build process - copy files to dist/'",
+    "dev": "echo 'Development mode - no build required'",
+    "test": "echo 'Run extension tests'"
+  },
+  "keywords": [
+    "security",
+    "phishing",
+    "ai",
+    "browser-extension",
+    "cybersecurity"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.246"
+  }
+}

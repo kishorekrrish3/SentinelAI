@@ -1,0 +1,189 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-09-18",
+  "patterns": {
+    "phishing_phrases": [
+      {
+        "pattern": "urgent action required",
+        "weight": 25,
+        "category": "urgency",
+        "description": "Creates false sense of urgency"
+      },
+      {
+        "pattern": "verify account immediately",
+        "weight": 30,
+        "category": "verification_scam",
+        "description": "Fake account verification request"
+      },
+      {
+        "pattern": "suspended account",
+        "weight": 25,
+        "category": "account_threat",
+        "description": "False account suspension claim"
+      },
+      {
+        "pattern": "click here now",
+        "weight": 20,
+        "category": "urgency",
+        "description": "Urgent call-to-action"
+      },
+      {
+        "pattern": "congratulations winner",
+        "weight": 35,
+        "category": "prize_scam",
+        "description": "Fake prize notification"
+      },
+      {
+        "pattern": "limited time offer",
+        "weight": 15,
+        "category": "urgency",
+        "description": "Time pressure tactic"
+      },
+      {
+        "pattern": "update payment information",
+        "weight": 30,
+        "category": "credential_harvesting",
+        "description": "Request for payment details"
+      },
+      {
+        "pattern": "wire transfer urgent",
+        "weight": 45,
+        "category": "financial_fraud",
+        "description": "Urgent financial request"
+      }
+    ],
+    "authority_patterns": [
+      {
+        "pattern": "ceo request",
+        "weight": 40,
+        "category": "authority_impersonation",
+        "description": "CEO impersonation"
+      },
+      {
+        "pattern": "from management",
+        "weight": 30,
+        "category": "authority_impersonation",
+        "description": "Management impersonation"
+      },
+      {
+        "pattern": "executive order",
+        "weight": 35,
+        "category": "authority_impersonation",
+        "description": "Executive authority claim"
+      }
+    ],
+    "suspicious_domains": [
+      {
+        "pattern": "paypal-[a-z0-9]+\\.com",
+        "weight": 45,
+        "category": "subdomain_spoofing",
+        "description": "PayPal subdomain spoofing"
+      },
+      {
+        "pattern": "amazon-[a-z0-9]+\\.com",
+        "weight": 45,
+        "category": "subdomain_spoofing",
+        "description": "Amazon subdomain spoofing"
+      },
+      {
+        "pattern": "microsoft-[a-z0-9]+\\.com",
+        "weight": 45,
+        "category": "subdomain_spoofing",
+        "description": "Microsoft subdomain spoofing"
+      },
+      {
+        "pattern": "google-[a-z0-9]+\\.com",
+        "weight": 45,
+        "category": "subdomain_spoofing",
+        "description": "Google subdomain spoofing"
+      }
+    ],
+    "character_substitution": [
+      {
+        "pattern": "payp[a@]l",
+        "weight": 40,
+        "category": "character_substitution",
+        "description": "PayPal character substitution"
+      },
+      {
+        "pattern": "g[o0][o0]gle",
+        "weight": 40,
+        "category": "character_substitution",
+        "description": "Google character substitution"
+      },
+      {
+        "pattern": "microso[f7]t",
+        "weight": 40,
+        "category": "character_substitution",
+        "description": "Microsoft character substitution"
+      }
+    ],
+    "grammar_errors": [
+      {
+        "pattern": "you're account",
+        "weight": 10,
+        "category": "grammar_anomalies",
+        "description": "Common grammar error in phishing"
+      },
+      {
+        "pattern": "recieve",
+        "weight": 8,
+        "category": "grammar_anomalies",
+        "description": "Common spelling error"
+      },
+      {
+        "pattern": "occured",
+        "weight": 8,
+        "category": "grammar_anomalies",
+        "description": "Common spelling error"
+      }
+    ]
+  },
+  "risk_thresholds": {
+    "low": 30,
+    "medium": 70,
+    "high": 100
+  },
+  "categories": {
+    "urgency": {
+      "description": "Tactics that create false sense of urgency",
+      "severity": "medium"
+    },
+    "verification_scam": {
+      "description": "Fake verification requests",
+      "severity": "high"
+    },
+    "account_threat": {
+      "description": "False claims about account issues",
+      "severity": "high"
+    },
+    "prize_scam": {
+      "description": "Fake prize or lottery notifications",
+      "severity": "medium"
+    },
+    "authority_impersonation": {
+      "description": "Impersonation of authority figures",
+      "severity": "high"
+    },
+    "financial_fraud": {
+      "description": "Fraudulent financial requests",
+      "severity": "critical"
+    },
+    "credential_harvesting": {
+      "description": "Attempts to steal credentials",
+      "severity": "high"
+    },
+    "subdomain_spoofing": {
+      "description": "Use of deceptive subdomains",
+      "severity": "high"
+    },
+    "character_substitution": {
+      "description": "Character substitution in domains",
+      "severity": "high"
+    },
+    "grammar_anomalies": {
+      "description": "Unusual grammar or spelling errors",
+      "severity": "low"
+    }
+  }
+}

