@@ -99,8 +99,8 @@ SentinelAI combines **browser extension logic** with a **React-based website**:
 1. Clone the repo:
 
    ```bash
-   git clone <YOUR_GIT_URL>
-   cd <YOUR_PROJECT_NAME>
+   git clone https://github.com/kishorekrrish3/SentinelAI-Phishing-and-Social-Engineering-Detection-Engine-and-Extension.git
+   cd SentinelAI-Phishing-and-Social-Engineering-Detection-Engine-and-Extension
    ```
 2. Install dependencies:
 
