@@ -6,24 +6,6 @@
 
 > **SentinelAI** is a state-of-the-art **AI-powered security platform and browser extension** designed to detect and prevent **phishing, spam, and social engineering attacks** in real time. It combines advanced **multi-modal AI**, **adaptive learning**, and **educational feedback** to safeguard users across the web.
 
----
-
-## 📑 Table of Contents
-
-1. [Introduction](#-introduction)
-2. [Features](#-features)
-3. [Architecture](#-architecture)
-4. [Tech Stack](#-tech-stack)
-5. [Installation & Setup](#-installation--setup)
-
-   * [Website](#website)
-   * [Browser Extension](#browser-extension)
-6. [Usage](#-usage)
-7. [Project Structure](#-project-structure)
-8. [Contributing](#-contributing)
-9. [License](#-license)
-
----
 
 ## 📌 Introduction
 
@@ -45,13 +27,21 @@ It delivers:
 ## ⚡ Features
 
 ✅ **AI-Driven Detection** – NLP for phishing cues, URL/domain spoofing detection, metadata checks.
+
 ✅ **Image Recognition** – Spoofed logo & deceptive image detection (prepared for TF.js integration).
+
 ✅ **Risk Scoring Engine** – Calculates risk & confidence scores with category breakdowns.
+
 ✅ **Federated Learning** – Privacy-preserving adaptive updates via anonymized insights.
+
 ✅ **Predictive GAN Simulations** – Simulates synthetic phishing attacks to stress-test defenses.
+
 ✅ **Interactive Dashboards** – Real-time risk scores, alerts, and detailed threat breakdowns.
+
 ✅ **User Education** – Gamified modules & feedback for awareness training.
+
 ✅ **Enterprise-Ready** – APIs, SSO support, security policies, and compliance reporting.
+
 ✅ **Full Website** – Explore docs, dashboards, and installation guides with a modern UI.
 
 ---
