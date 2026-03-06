@@ -1,191 +1,344 @@
-# 🔒 SentinelAI – AI-Powered Social Engineering & Phishing Detection
+<div align="center">
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
-![Hackathon](https://img.shields.io/badge/DataQuest%202.0-Project-orange.svg)
+# 🛡️ SentinelAI
 
-> **SentinelAI** is a state-of-the-art **AI-powered security platform and browser extension** designed to detect and prevent **phishing, spam, and social engineering attacks** in real time. It combines advanced **multi-modal AI**, **adaptive learning**, and **educational feedback** to safeguard users across the web.
+### AI-Powered Social Engineering & Phishing Detection Platform
 
+**A multi-modal AI security system and browser extension that detects phishing, spam, and social engineering attacks in real time.**
+*Combining NLP, heuristic intelligence, adaptive learning, and threat visualization to protect users across the web.*
 
-## 📌 Introduction
+<br>
 
-Social engineering attacks such as **phishing, pre-texting, and business email compromise (BEC)** remain the **#1 cause of global data breaches**. With modern attackers leveraging **AI to generate sophisticated scams**, traditional filters often fail.
+[![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Type_Safe_JS-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-Lightning_Fast_Build-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)](https://vitejs.dev/)
+[![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-MV3-4285F4?style=for-the-badge\&logo=googlechrome\&logoColor=white)](https://developer.chrome.com/docs/extensions/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-UI_Framework-38B2AC?style=for-the-badge\&logo=tailwind-css\&logoColor=white)](https://tailwindcss.com/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
 
-**SentinelAI’s mission** is simple:
-➡️ Adapt to AI-powered phishing & scams by **fighting them back with AI**.
-
-It delivers:
-
-* **Real-time risk scoring** with confidence levels.
-* **Multi-modal threat detection** across text, images, links, and forms.
-* **Adaptive learning** to stay ahead of emerging attack vectors.
-* **Educational feedback** to strengthen user security awareness.
-* **Enterprise integrations** with policy enforcement & compliance reporting.
+</div>
 
 ---
 
-## ⚡ Features
+# 📖 What is SentinelAI?
 
-✅ **AI-Driven Detection** – NLP for phishing cues, URL/domain spoofing detection, metadata checks.
+SentinelAI is an **AI-powered cybersecurity platform and browser extension** built to combat modern **phishing, spam, and social engineering attacks**.
 
-✅ **Image Recognition** – Spoofed logo & deceptive image detection (prepared for TF.js integration).
+As attackers increasingly leverage **AI-generated scams**, traditional spam filters struggle to keep up. SentinelAI addresses this challenge by combining **natural language analysis, URL heuristics, behavioral signals, and adaptive learning** to identify malicious activity before it harms the user.
 
-✅ **Risk Scoring Engine** – Calculates risk & confidence scores with category breakdowns.
+When a user visits a webpage or receives suspicious content:
 
-✅ **Federated Learning** – Privacy-preserving adaptive updates via anonymized insights.
+1. The **browser extension analyzes page content, links, and forms**.
+2. The **AI threat engine evaluates phishing patterns, spoofed domains, and suspicious language**.
+3. A **risk score with confidence metrics** is generated.
+4. The system provides **real-time warnings and educational feedback**.
+5. Insights can be visualized in the **SentinelAI dashboard website**.
 
-✅ **Predictive GAN Simulations** – Simulates synthetic phishing attacks to stress-test defenses.
-
-✅ **Interactive Dashboards** – Real-time risk scores, alerts, and detailed threat breakdowns.
-
-✅ **User Education** – Gamified modules & feedback for awareness training.
-
-✅ **Enterprise-Ready** – APIs, SSO support, security policies, and compliance reporting.
-
-✅ **Full Website** – Explore docs, dashboards, and installation guides with a modern UI.
+This hybrid system combines **browser-level protection with centralized analytics dashboards**, making it suitable for both **individual users and enterprise security teams**.
 
 ---
 
-## 🏗 Architecture
+# ✨ Features
 
-SentinelAI combines **browser extension logic** with a **React-based website**:
-
-* **Browser Extension (Core)**
-
-  * Content Scripts & Service Worker (Manifest V3).
-  * AI Engine for text, link, form, and image analysis.
-  * Federated Learning Simulation (JSON-based patterns + local aggregation).
-  * Chrome APIs for tabs, runtime, storage, notifications.
-
-* **Website**
-
-  * Frontend dashboards for threat visualization.
-  * Documentation & user guides.
-  * Enterprise modules with integration options.
-
-* **AI Engine (Shared Core)**
-
-  * NLP for phishing phrases, urgency cues, authority patterns.
-  * Domain & URL heuristics (spoof detection, TLD checks, IP URLs).
-  * Suspicious form and link detection.
-  * Confidence-weighted scoring with adaptive model updates.
+| Feature                                | Description                                                            |
+| -------------------------------------- | ---------------------------------------------------------------------- |
+| 🧠 **AI-Driven Threat Detection**      | NLP analysis of phishing phrases, urgency cues, and authority patterns |
+| 🔗 **URL & Domain Spoof Detection**    | Detects suspicious TLDs, IP-based URLs, and spoofed domains            |
+| 🖼 **Image Spoof Detection (Planned)** | Detect fake logos and deceptive images                                 |
+| 📊 **Risk Scoring Engine**             | Calculates threat scores with confidence metrics                       |
+| 🧬 **Federated Learning Simulation**   | Adaptive threat detection using anonymized insights                    |
+| 🎯 **Predictive GAN Simulations**      | Generates synthetic phishing attacks for defense testing               |
+| 📉 **Security Dashboards**             | Visualize threats and detection insights                               |
+| 🎓 **User Awareness Training**         | Gamified modules to educate users about phishing                       |
+| 🏢 **Enterprise Integrations**         | APIs, compliance reporting, and policy enforcement                     |
 
 ---
 
-## 🛠 Tech Stack
+# 🏗️ System Architecture
 
-### 🌐 Website
+### Security Detection Pipeline
 
-* [Vite](https://vitejs.dev/) – Lightning-fast build tool.
-* [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/).
-* [shadcn-ui](https://ui.shadcn.com/) – Component library.
-* [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS.
+```mermaid
+graph TD
+    A[🌐 User Browsing Website] --> B[Browser Extension Content Script]
+    B --> C[Data Extraction]
+    C --> D[AI Threat Detection Engine]
+
+    D --> E[Text Analysis - NLP]
+    D --> F[URL & Domain Heuristics]
+    D --> G[Form & Metadata Inspection]
+    D --> H[Image Analysis]
+
+    E --> I[Threat Scoring Engine]
+    F --> I
+    G --> I
+    H --> I
+
+    I --> J[Risk Score + Confidence]
+    J --> K[User Warning / Notification]
+
+    I --> L[SentinelAI Dashboard]
+```
+
+---
+
+### Platform Architecture
+
+SentinelAI consists of **three major components**:
+
+#### 1️⃣ Browser Extension (Core Security Layer)
+
+* Content scripts monitor web page content.
+* Background service worker processes detection requests.
+* Local AI engine evaluates phishing threats.
+* Chrome APIs handle notifications and browser interaction.
+
+#### 2️⃣ SentinelAI Website
+
+Provides:
+
+* Security dashboards
+* Threat analytics
+* Documentation
+* Enterprise integration modules
+
+#### 3️⃣ AI Threat Engine
+
+Responsible for:
+
+* NLP phishing detection
+* Domain spoofing detection
+* Suspicious form analysis
+* Risk scoring and confidence calculation
+
+---
+
+# 🛠️ Technology Stack
+
+### 🌐 Website (Frontend)
+
+| Component     | Technology     |
+| ------------- | -------------- |
+| Framework     | `React`        |
+| Language      | `TypeScript`   |
+| Build Tool    | `Vite`         |
+| UI Components | `shadcn-ui`    |
+| Styling       | `Tailwind CSS` |
+
+---
 
 ### 🧩 Browser Extension
 
-* **JavaScript (ES6+)** – Core logic, content/background scripts.
-* **Chrome Extension Manifest V3** – Secure extension framework.
-* **Chrome APIs** – Tabs, messaging, storage, scripting, notifications.
-* **Custom AI Logic** – Heuristic NLP + threat database in JSON.
-* **Federated Learning Simulation** – Privacy-preserving model adaptation.
-* **Image Analysis (placeholder)** – Future integration with TensorFlow\.js.
+| Component               | Technology                                     |
+| ----------------------- | ---------------------------------------------- |
+| Extension Framework     | `Chrome Manifest V3`                           |
+| Language                | `JavaScript (ES6+)`                            |
+| Browser APIs            | `Chrome Tabs, Runtime, Storage, Notifications` |
+| Threat Detection Engine | Custom heuristic NLP logic                     |
+| Data Storage            | JSON threat patterns                           |
+| Future Integration      | `TensorFlow.js` for image analysis             |
 
 ---
 
-## 🚀 Installation & Setup
+# 📂 Project Structure
 
-### Website
-
-1. Clone the repo:
-
-   ```bash
-   git clone https://github.com/kishorekrrish3/SentinelAI-Phishing-and-Social-Engineering-Detection-Engine-and-Extension.git
-   cd SentinelAI-Phishing-and-Social-Engineering-Detection-Engine-and-Extension
-   ```
-2. Install dependencies:
-
-   ```bash
-   npm i
-   ```
-3. Run dev server:
-
-   ```bash
-   npm run dev
-   ```
-4. Open your browser at `http://localhost:5173` (default Vite port).
-
-### Browser Extension
-
-1. Navigate to `chrome://extensions/`.
-2. Enable **Developer Mode**.
-3. Click **Load unpacked** and select the `extension` folder.
-4. The extension is now installed and ready for testing.
-
----
-
-## 📂 Project Structure
-
-```
+```text
 SentinelAI/
-│── extension/                # Chrome Extension (Manifest V3)
-│ ├── background/             # Background Service Worker and scripts
-│ │ └── service-worker.js     # Background script handling messages and scanning
-│ ├── content/                # Content Scripts injected into web pages
-│ │ └── content.js            # Monitors page data and communicates with background
-│ ├── popup/                  # Extension popup UI files
-│ │ ├── popup.html            # Popup interface HTML
-│ │ ├── popup.css             # Popup styling
-│ │ └── popup.js              # Popup frontend logic and event handling
-│ ├── lib/                    # Core Libraries and AI engine
-│ │ ├── ai-engine.js          # AI threat detection engine and scoring logic
-│ │ └── utils.js              # Utility helper functions
-│ ├── assets/                 # Static assets and JSON models
-│ │ ├── icons/                # Extension icon images
-│ │ │ ├── icon16.png
-│ │ │ ├── icon48.png
-│ │ │ └── icon128.png
-│ │ ├── models/               # AI models and threat data JSON files
-│ │ │ ├── threat-patterns.json
-│ │ │ ├── logo-database.json
-│ │ │ └── blacklist.json
-│ ├── styles/                 # CSS styles for content scripts and extension UI
-│ │ └── content.css           # Styles injected with content scripts
 │
-│── website/                  # React + Vite Frontend
-│ ├── src/                    # React source files
-│ ├── components/             # Reusable UI components
-│ ├── pages/                  # Page routing
-│ ├── public/                 # Static assets
-│ └── tailwind.config.js      # Tailwind config
+├── extension/                    # Chrome Extension (Manifest V3)
 │
-└── README.md # Documentation
+│   ├── background/
+│   │   └── service-worker.js     # Background script for detection logic
+│
+│   ├── content/
+│   │   └── content.js            # Injected scripts analyzing page content
+│
+│   ├── popup/
+│   │   ├── popup.html
+│   │   ├── popup.css
+│   │   └── popup.js              # Popup interface logic
+│
+│   ├── lib/
+│   │   ├── ai-engine.js          # AI threat detection engine
+│   │   └── utils.js              # Utility helpers
+│
+│   ├── assets/
+│   │   ├── icons/
+│   │   └── models/
+│   │       ├── threat-patterns.json
+│   │       ├── logo-database.json
+│   │       └── blacklist.json
+│
+│   ├── styles/
+│   │   └── content.css
+│
+│
+├── website/                      # React + Vite dashboard
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── public/
+│   └── tailwind.config.js
+│
+└── README.md
 ```
 
 ---
 
-## 🎯 Usage
+# 🚀 Installation & Setup
 
-* Install the **extension** → browse any website → receive **risk scores, warnings, and details** in real time.
-* Open the **SentinelAI dashboard (website)** → view detections, explore “How It Works”, or read enterprise integration docs.
-* Enable **educational mode** → learn through gamified modules & phishing simulations.
+## Prerequisites
 
----
-
-## 🤝 Contributing
-
-We welcome contributions! 🚀
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m "Added feature X"`).
-4. Push and open a PR.
-
-Please check issues and follow our coding style guidelines before contributing.
+* Node.js 18+
+* Chrome Browser
+* npm or yarn
 
 ---
 
-## 📜 License
+# 1️⃣ Clone the Repository
 
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+```bash
+git clone https://github.com/kishorekrrish3/SentinelAI-Phishing-and-Social-Engineering-Detection-Engine-and-Extension.git
+cd SentinelAI-Phishing-and-Social-Engineering-Detection-Engine-and-Extension
+```
 
 ---
+
+# 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+# 3️⃣ Run the Website
+
+```bash
+npm run dev
+```
+
+The dashboard will be available at:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🔌 Installing the Browser Extension
+
+1. Open Chrome and navigate to:
+
+```
+chrome://extensions/
+```
+
+2. Enable **Developer Mode**.
+
+3. Click **Load unpacked**.
+
+4. Select the `extension/` folder.
+
+The SentinelAI extension will now be active.
+
+---
+
+# 🌐 Usage
+
+Once installed:
+
+1️⃣ Browse any website normally.
+
+2️⃣ SentinelAI analyzes:
+
+* page content
+* links
+* forms
+* domain metadata
+
+3️⃣ If a threat is detected, the extension provides:
+
+* ⚠️ Warning alerts
+* 📊 Risk score
+* 📋 Threat breakdown
+
+4️⃣ View analytics in the **SentinelAI Dashboard**.
+
+---
+
+# ⚙️ Configuration
+
+| Setting           | File                   | Description                |
+| ----------------- | ---------------------- | -------------------------- |
+| Threat Patterns   | `threat-patterns.json` | NLP phishing indicators    |
+| Domain Blacklist  | `blacklist.json`       | Known malicious domains    |
+| Logo Detection DB | `logo-database.json`   | Brand logo spoof detection |
+| AI Engine Logic   | `ai-engine.js`         | Risk scoring and detection |
+
+---
+
+# 🐛 Known Issues & Troubleshooting
+
+### Extension not detecting threats
+
+Ensure:
+
+* The extension is enabled in **chrome://extensions**
+* The page allows content scripts to run
+
+---
+
+### Dashboard not loading
+
+Verify the Vite server started successfully:
+
+```
+http://localhost:5173
+```
+
+Restart the development server if needed.
+
+---
+
+# 🔮 Future Improvements
+
+* 🧠 **Deep learning phishing detection models**
+* 🖼 **TensorFlow.js image spoof detection**
+* 🔗 **Real-time threat intelligence feeds**
+* 📊 **Enterprise SOC dashboards**
+* 🛡 **Cross-browser extension support**
+* 🔍 **Large-scale phishing dataset training**
+
+---
+
+# 🤝 Contributing
+
+We welcome contributions from the community.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a pull request
+
+Please follow project coding guidelines and check existing issues before submitting.
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+<br>
+
+<i>Defending the internet from AI-powered scams with AI itself.</i>
+
+<br><br>
+
+<b>SentinelAI</b> — intelligent security for the modern web.
+
+</div>
