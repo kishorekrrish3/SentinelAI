@@ -20,6 +20,9 @@
 
 ---
 
+> **Project status:** Prototype security tooling. Phishing and social-engineering signals can produce false positives and false negatives; verify suspicious content independently and do not treat a model score as a guarantee of safety.
+
+
 # 📖 What is SentinelAI?
 
 SentinelAI is an **AI-powered cybersecurity platform and browser extension** built to combat modern **phishing, spam, and social engineering attacks**.
